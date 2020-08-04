@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="icon" href="/img/sun.png">
+    <link rel="stylesheet" href="/css/style.css">
+    
+</head>
+
+<body>
+    <div class="main-content">
+        {{>header}}
+        <p>Weather info shown here!</p>
+        <form id="frmWeather">
+            <input id="txtLocation" placeholder="city, location">
+            <button id="btnWeather">Search</button>
+        </form>
+        <p id="paraMessage1"></p>
+        <p id="paraMessage2"></p>
+    </div>
+    {{>footer}}
+    <script src="/js/app.js" ></script>
+</body>
+</html>
