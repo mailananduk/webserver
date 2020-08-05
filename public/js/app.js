@@ -15,7 +15,7 @@ const weatherInfo = (forLocation) => fetch("/weather?city=" + forLocation).then(
             console.log(data.description);
             console.log(data.temperature);
             console.log(data.city);
-            paraMessage1.textContent = `Description:${data.description}, temperature: ${data.temperature}`;
+            paraMessage1.textContent = `Description:${data.description}, Temperature: ${data.temperature} C, Feel like: ${data.feelsLike} C`;
             paraMessage2.textContent = 'City:' + data.city.toUpperCase();
         }
     })
